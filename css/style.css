@@ -39,15 +39,15 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-.wrapper {
+/* .wrapper {
     background-image: url(../images/bg-pattern-desktop.svg);
     display: grid;
     grid: auto/ auto auto;
     border: solid black;
     border-radius: 15px;
-}
+} */
 
-.accordion {
+/* .accordion {
     border: none;
     background: none;
     cursor: pointer;
@@ -57,24 +57,24 @@ body {
     text-align: left;
     transition: 0.4s;
     /* when hovering, the transition will take about 0.4s */
-}
+ */
 
-.active,
+/* .active,
 .accordion:hover {
     color: var(--soft-red);
-}
+} */
 
-.accordion:after {
+/* .accordion:after {
     content: "\2304";
     color: var(--soft-red);
     font-weight: 700;
     margin-right: .625rem;
     float: right;
-}
+} */
 
-.active:after {
+/* .active:after {
     content: "\2303" ;
-}
+} */
 
 .panel {
     padding: .625rem;
