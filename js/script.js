@@ -1,14 +1,7 @@
-var accQuestion = document.getElementsByClassName("accordion");
-var i;
+var questions = document.querySelectorAll(".question");
 
-for (i = 0; i < accQuestion.length; i++) {
-    accQuestion[i].addEventListener("click", function(){
-        this.classList.toggle("active");
-        var panel = this.nextElementsibling;
-        if (panel) {
-            panel = null;
-        } else {
-            panel = panel = "px";
-        }
-    });
-}
+questions.forEach((question) => {
+    question.addEventListener("click", () => {
+        question.classList.toggle("open");
+    })
+})

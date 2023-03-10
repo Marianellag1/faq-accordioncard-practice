@@ -37,48 +37,80 @@ body {
     align-items: center;
     font-size: 12px;
     font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(180deg, var(--soft-violet) 30%, var(--soft-blue) 55%);
 }
 
-/* .wrapper {
+.accordion h1 {
+    padding-bottom: 1.50rem;
+}
+
+.accordion {
     background-image: url(../images/bg-pattern-desktop.svg);
     display: grid;
     grid: auto/ auto auto;
     border: solid black;
     border-radius: 15px;
-} */
+    background-color: var(--light-grayish-blue);
+    padding: 2rem;
+    max-width: 900px;
+    padding-left: 0;
+}
 
-/* .accordion {
-    border: none;
-    background: none;
-    cursor: pointer;
-    outline: none;
-    width: 100%;
-    padding: .625rem;
-    text-align: left;
-    transition: 0.4s;
-    /* when hovering, the transition will take about 0.4s */
- */
+.cube {
+    max-width: 120px;
+    position: relative;
+    z-index: 2;
+    right: 50px;
+}
 
-/* .active,
-.accordion:hover {
-    color: var(--soft-red);
-} */
+.computer {
+    max-width: 400px;
+    position: relative;
+    z-index: 1;
+    right: 150px
+}
 
-/* .accordion:after {
+.words {
+    padding: 0 1.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -5rem;
+}
+
+.question {
+    padding-top: .50rem;
+    position: relative;
+}
+
+.question::after {
     content: "\2304";
     color: var(--soft-red);
-    font-weight: 700;
-    margin-right: .625rem;
-    float: right;
-} */
-
-/* .active:after {
-    content: "\2303" ;
-} */
-
-.panel {
-    padding: .625rem;
-    min-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    position: absolute;
+    right: 1rem;
 }
+
+.answer {
+    color: var(--dark-grayish-blue);
+    padding: .50rem .50rem .01rem 0;
+    height: 0;
+    /* height makes the answers overflow one on top of the other */
+    overflow: hidden;
+    /* overflow will hide the text behind the questions */
+    opacity: 0;
+    /* will just hide the answers */
+    border-bottom: 1px solid;
+}
+
+/* when the .question has the class of .open, then we can access the .answer */
+.question.open + .answer {
+    opacity: 1;
+    overflow: visible;
+    height: 3rem;
+    padding-bottom: .50rem;
+}
+
+.question.open::after {
+    content: "\2303" ;
+}
+
