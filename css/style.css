@@ -45,29 +45,35 @@ body {
 }
 
 .accordion {
-    background-image: url(../images/bg-pattern-desktop.svg);
     display: grid;
     grid: auto/ auto auto;
-    border: solid black;
     border-radius: 15px;
     background-color: var(--light-grayish-blue);
-    padding: 2rem;
     max-width: 900px;
     padding-left: 0;
+    box-shadow: 17px 21px 73px -17px rgba(0,0,0,0.58);
+}
+
+figure {
+    background-image: url(../images/bg-pattern-desktop.svg);
+    max-width: 425px;
+    background-position: bottom 767px right 1px;
 }
 
 .cube {
-    max-width: 120px;
+    max-width: 145px;
     position: relative;
     z-index: 2;
-    right: 50px;
+    top: 234px;
+    right: 42px;
 }
 
 .computer {
-    max-width: 400px;
+    max-width: 440px;
     position: relative;
     z-index: 1;
-    right: 150px
+    right: 47px;
+    bottom: 50px;
 }
 
 .words {
@@ -75,12 +81,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: -5rem;
 }
 
 .question {
     padding-top: .50rem;
     position: relative;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.question:hover {
+    color: var(--soft-red);
 }
 
 .question::after {
@@ -99,11 +110,12 @@ body {
     /* overflow will hide the text behind the questions */
     opacity: 0;
     /* will just hide the answers */
+    transition: all 0.5s;
     border-bottom: 1px solid;
 }
 
 /* when the .question has the class of .open, then we can access the .answer */
-.question.open + .answer {
+.question.open+.answer {
     opacity: 1;
     overflow: visible;
     height: 3rem;
@@ -111,6 +123,5 @@ body {
 }
 
 .question.open::after {
-    content: "\2303" ;
+    content: "\2303";
 }
-

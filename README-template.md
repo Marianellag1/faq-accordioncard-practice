@@ -92,7 +92,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Example resource 1](https://www.youtube.com/watch?v=c5QVpO7fSMU&t=14476s) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [HTML symbols](https://www.htmlsymbols.xyz/) - A great list of unique code characters.
 
 ## Author
