@@ -1,13 +1,6 @@
 var questions = document.querySelectorAll(".question");
 
-//code works. credit = TsbSankara youtube.
-// questions.forEach((question) => {
-//     question.addEventListener("click", () => {
-//         question.classList.toggle("open");
-//     })
-// })
-
-//this code, when user opens second question, previous questions closes.
+// //this code, when user opens second question, previous questions closes.
 questions.forEach((question) => {
     question.addEventListener("click", () => {
         if (question.classList.contains("open")) {
@@ -24,3 +17,4 @@ questions.forEach((question) => {
         }
     })
 })
+

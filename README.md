@@ -8,12 +8,10 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+-[Acknowledgments](#acknowledgments)
 
 
 
@@ -28,13 +26,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/img1.png)
+
+![](./images/img2.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site](https://marianellag1.github.io/faq-accordioncard-practice/)
 
 ## My process
 
@@ -44,11 +43,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-
-
-### Continued development
-
-Border-bottom to appear when answers are not fully displayed, as well when user has answer fully displayed, font size of question to be weight of 700 instead of the 400 it currently has.
+.
 
 ### Useful resources
 
